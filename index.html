@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sabor Cuscatleco - Banquetes y experiencias gastronómicas con el auténtico sabor de El Salvador"
+    />
+    <title>Sabor Cuscatleco | Gastronomía de El Salvador</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">🫓 Sabor Cuscatleco</div>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#nosotros">Nuestra Historia</a></li>
+          <li><a href="#menu-tipico">Nuestro Menú</a></li>
+          <li><a href="#pedido">Pedidos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>El Auténtico Sabor de El Salvador</h1>
+        <p>Desde pupusas hechas de puro maíz hasta el dulce toque del atol de elote</p>
+        <a href="#pedido" class="btn">Ordena o Cotiza tu Banquete</a>
+      </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <div class="container">
+        <h2>Nuestra Historia</h2>
+        <div class="nosotros-grid">
+          <div class="nosotros-img">🪵</div>
+          <div class="nosotros-texto">
+            <p>
+              En <strong>Sabor Cuscatleco</strong> llevamos más de una década preservando las recetas ancestrales de nuestras abuelas. Cocinamos con pasión, orgullo y con los ingredientes más frescos traídos directamente de los campos salvadoreños.
+            </p>
+            <p>
+              Ya sea que busques revivir la tradición de un domingo por la tarde o quieras sorprender a tus invitados con un banquete típico en tu evento, garantizamos calidad, higiene y el toque casero original que nos caracteriza.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinos" id="menu-tipico">
+      <div class="container">
+        <h2>Joyas de Nuestra Gastronomía</h2>
+        <div class="destinos-grid">
+          <div class="destino-card">
+            <div class="destino-icon">🫓</div>
+            <h3>Pupusas Tradicionales</h3>
+            <p>Reueltas, de queso, chicharrón, loroco o de ayote. Masa de maíz o arroz.</p>
+            <span class="precio">Desde $1.25 c/u</span>
+          </div>
+          <div class="destino-card">
+            <div class="destino-icon">🌽</div>
+            <h3>Tamales de Elote y Gallina</h3>
+            <p>Tamalitos de elote con crema o tamales de gallina india envueltos en hoja de plátano.</p>
+            <span class="precio">Desde $1.50 c/u</span>
+          </div>
+          <div class="destino-card">
+            <div class="destino-icon">☕</div>
+            <h3>Atoles y Bebidas</h3>
+            <p>Atol de elote, chilate con muegados, chocolate caliente o refresco de ensalada.</p>
+            <span class="precio">Desde $1.75</span>
+          </div>
+          <div class="destino-card">
+            <div class="destino-icon">🍌</div>
+            <h3>Antojitos de la Tarde</h3>
+            <p>Empanadas de poleada, canoas de plátano, yuca frita o salcochada con pespesca.</p>
+            <span class="precio">Desde $2.00</span>
+          </div>
+          <div class="destino-card">
+            <div class="destino-icon">🥣</div>
+            <h3>Sopa de Gallina India</h3>
+            <p>Acompañada de su porción de gallina asada al carbón, arroz y tortillas calientes.</p>
+            <span class="precio">Desde $6.50</span>
+          </div>
+          <div class="destino-card">
+            <div class="destino-icon">🐟</div>
+            <h3>Mariscos de la Costa</h3>
+            <p>Cócteles de conchas, camarones al ajillo y mariscadas con el toque del Puerto de La Libertad.</p>
+            <span class="precio">Desde $8.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cotizacion" id="pedido">
+      <div class="container">
+        <h2>Haz tu Pedido o Cotización</h2>
+        <form id="formCotizacion" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre Completo *</label>
+            <input type="text" id="nombre" required />
+            <span class="error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico *</label>
+            <input type="email" id="email" required />
+            <span class="error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono de Contacto *</label>
+            <input type="tel" id="telefono" placeholder="7XXX-XXXX o 2XXX-XXXX" required />
+            <span class="error"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="destino">Especialidad Principal *</label>
+              <select id="destino" required>
+                <option value="">Seleccionar...</option>
+                <option value="pupusas">Pupusas (Variadas)</option>
+                <option value="tamales">Tamales Típicos</option>
+                <option value="atoles">Atoles y Bebidas</option>
+                <option value="antojitos">Antojitos de la Tarde</option>
+                <option value="sopa">Sopa de Gallina India</option>
+                <option value="mariscos">Mariscos Costeros</option>
+              </select>
+              <span class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="personas">Porciones / Personas *</label>
+              <select id="personas" required>
+                <option value="">Seleccionar volumen...</option>
+                <option value="individual">Para mí (Individual)</option>
+                <option value="familia">Grupo Familiar (2-5 personas)</option>
+                <option value="evento-pequeno">Evento Pequeño (10-25 personas)</option>
+                <option value="evento-mediano">Evento Mediano (25-50 personas)</option>
+                <option value="banquete">Gran Banquete (50+ personas)</option>
+              </select>
+              <span class="error"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fechaSalida">Fecha del Evento/Entrega *</label>
+              <input type="date" id="fechaSalida" required />
+              <span class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="fechaRegreso">Fecha Límite para Cambios *</label>
+              <input type="date" id="fechaRegreso" required />
+              <span class="error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="comentarios">Detalles específicos (Restricciones alimenticias, desglose de sabores, etc.)</label>
+            <textarea id="comentarios" rows="3" maxlength="300" placeholder="Ej. 10 de queso con loroco, 5 de chicharrón..."></textarea>
+            <span class="char-count"><span id="charCount">0</span>/300</span>
+          </div>
+
+          <button type="submit" class="btn">Enviar Solicitud Gastronómica</button>
+        </form>
+
+        <div id="mensajeExito" class="mensaje-exito">
+          ✓ ¡Pedido recibido! Nos pondremos en contacto vía WhatsApp o llamada para confirmar los detalles. ¡Buen provecho!
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <h3>Sabor Cuscatleco</h3>
+            <p>Orgullo culinario salvadoreño en tu mesa.</p>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <p>📍 Paseo General Escalón, San Salvador</p>
+            <p>📞 +503 2255-7788</p>
+            <p>✉️ pedidos@saborcuscatleco.com</p>
+          </div>
+          <div>
+            <h4>¡Síguenos en las Redes!</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+          </div>
+        </div>
+        <p class="copyright">© 2026 Sabor Cuscatleco - Hecho con amor en El Salvador</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
